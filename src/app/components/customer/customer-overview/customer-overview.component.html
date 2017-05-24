@@ -13,6 +13,11 @@
         <th>#</th>
         <th>Vorname</th>
         <th>Nachname</th>
+        <th>Geburtsdatum</th>
+        <th>Strasse</th>
+        <th>Postleitzahl</th>
+        <th>Ort</th>
+        <th>Anzahlbestellungen</th>
         <th>Aktionen</th>
       </tr>
       </thead>
@@ -21,6 +26,10 @@
         <th scope="row">{{i}}</th>
         <td>{{customer.firstName}}</td>
         <td>{{customer.lastName}}</td>
+        <td>{{customer.birthdate}}</td>
+        <td>{{customer.street}}</td>
+        <td>{{customer.postcode}}</td>
+        <td>{{customer.city}}</td>
         <td>
           <div class="btn-group" role="group">
             <a class="btn btn-xs btn-default" href="#"><i class="fa fa-info" aria-hidden="true"></i></a>
