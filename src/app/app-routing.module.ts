@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import {CustomerOverviewComponent} from "./components/customer/customer-overview/customer-overview.component";
-import {OrderOverviewComponent} from "./components/order/order-overview/order-overview.component";
-import {NormalProductOverviewComponent} from "./components/product/normal/normal-product-overview/normal-product-overview.component";
-import {SpecialProductOverviewComponent} from "./components/product/special/special-product-overview/special-product-overview.component";
+import { DashboardComponent } from './dashboard/dashboard.component';
+import {CustomerOverviewComponent} from "./customer/components/customer-overview/customer-overview.component";
+import {OrderOverviewComponent} from "./order/components/order-overview/order-overview.component";
+import {NormalProductOverviewComponent} from "./product/components/normal/normal-product-overview/normal-product-overview.component";
+import {SpecialProductOverviewComponent} from "./product/components/special/special-product-overview/special-product-overview.component";
 
 
 export const appRoutes: Routes = [

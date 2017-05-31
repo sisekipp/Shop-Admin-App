@@ -4,24 +4,23 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { HeaderComponent } from './components/header/header.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import {RouterModule} from "@angular/router";
 import {appRoutes} from "./app-routing.module";
-import { CustomerOverviewComponent } from './components/customer/customer-overview/customer-overview.component';
-import { CustomerDetailsComponent } from './components/customer/customer-details/customer-details.component';
-import { OrderOverviewComponent } from './components/order/order-overview/order-overview.component';
-import { OrderDetailComponent } from './components/order/order-detail/order-detail.component';
-import { NormalProductOverviewComponent } from './components/product/normal/normal-product-overview/normal-product-overview.component';
-import { NormalProductDetailComponent } from './components/product/normal/normal-product-detail/normal-product-detail.component';
-import { SpecialProductOverviewComponent } from './components/product/special/special-product-overview/special-product-overview.component';
-import { SpecialProductDetailComponent } from './components/product/special/special-product-detail/special-product-detail.component';
-import {CustomerService} from "./services/customer/customer.service";
+import {CustomerModule} from "./customer/customer.module";
+import {OrderModule} from './order/order.module';
+import {ProductModule} from './product/product.module';
 
 
 const APP_SERVICES = [
-  CustomerService
+]
+
+const APP_MODULES = [
+  CustomerModule,
+  OrderModule,
+  ProductModule
 ]
 
 @NgModule({
@@ -29,21 +28,14 @@ const APP_SERVICES = [
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    DashboardComponent,
-    CustomerOverviewComponent,
-    CustomerDetailsComponent,
-    OrderOverviewComponent,
-    OrderDetailComponent,
-    NormalProductOverviewComponent,
-    NormalProductDetailComponent,
-    SpecialProductOverviewComponent,
-    SpecialProductDetailComponent
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    APP_MODULES,
   ],
   providers: [APP_SERVICES],
   bootstrap: [AppComponent]
