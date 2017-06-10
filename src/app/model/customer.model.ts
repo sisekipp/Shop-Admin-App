@@ -1,5 +1,6 @@
 
-import {Order} from "./order.model";
+import {Order} from './order.model';
+
 export class Customer {
 
   private _firstName: string;
@@ -10,7 +11,7 @@ export class Customer {
   private _birthdate: string;
   private _orders: Order[];
 
-  constructor(firstName: string, lastName: string, birthdate: string, orders: Order[] ,street?: string, city?: string, postcode?: string) {
+  constructor(firstName: string, lastName: string, birthdate: string, orders: Order[] , street?: string, city?: string, postcode?: string) {
     this._firstName = firstName;
     this._lastName = lastName;
     this._birthdate = birthdate;
