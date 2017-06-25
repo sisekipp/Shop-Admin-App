@@ -1,5 +1,5 @@
 
-import {Order} from './order.model';
+import {Order} from '../../order/model/order.model';
 
 export class Customer {
 

@@ -1,4 +1,4 @@
-import {Customer} from "../../model/customer.model";
+import {Customer} from "../model/customer.model";
 
 export class CustomerService {
 
