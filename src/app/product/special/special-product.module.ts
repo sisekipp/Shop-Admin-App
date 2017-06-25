@@ -13,4 +13,4 @@ import { specialProductRouting } from 'app/product/special/special-product.routi
   ],
   declarations: [ SpecialProductOverviewComponent, SpecialProductDetailComponent ]
 })
-export class ProductModule { }
+export class SpecialProductModule { }
